@@ -150,7 +150,7 @@ body {
 }
 
 .about-me-container {
-    padding: 30px;
+    padding: 5rem 3rem;
 }
 
 .topic-heading {
@@ -158,9 +158,9 @@ body {
     letter-spacing: 5px;
     line-height: 50px;
     display: inline-block;
-    border-bottom: 5px solid currentColor;
     transition: all 0.4s;
     cursor: pointer;
+    margin-bottom: 1.5rem;
     font-family: 'lsb';
 }
 
@@ -197,7 +197,7 @@ body {
 }
 
 .portfolio-container {
-    padding: 30px;
+    padding: 5rem 3rem;
     background: #121212;
     color: #fff;
 }
@@ -257,6 +257,116 @@ body {
     margin-right: 1rem;
     font-weight: 900;
     cursor: pointer;
+}
+
+.contact-container {
+    padding: 5rem 3rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+}
+
+.contact-content {
+    font-size: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered {
+    width: 100%;
+}
+
+.centered > p {
+    margin: 1.5rem 0;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+}
+
+.centered > p > i {
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+.contact-content__heading {
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-family: 'lsb';
+}
+
+.contact-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width: 80%;
+}
+
+input, textarea {
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    font-family: "Manjari", sans-serif;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+    height: auto;
+    margin: 1rem 0;
+    color: #121212;
+    transition: all 0.2s;
+}
+
+input:active, input:focus, textarea:focus, textarea:active {
+    outline: none;
+    border: 1px solid #3dd3fc;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 2rem;
+    background: #121212;
+    color: #f7f7f7;
+    font-family: "Manjari", sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.4s;
+}
+
+.contact-btn:active, .contact-btn:focus {
+    outline: none;
+}
+
+.contact-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.4);
+}
+
+.footer {
+    padding: 3rem;
+    width: 100%;
+    background-color: #121212;
+    color: #f7f7f7;
+}
+
+.footer-heading {
+    font-family: 'lsb';
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.red-heart {
+    color: #ff1f48;
 }
 
 @keyframes moveInBottom {

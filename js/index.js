@@ -13,9 +13,9 @@ if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navig
             navbar.style.boxShadow = "0 3px 8px rgba(0,0,0,0.4)";
             logo.style.background = "#121212";
             logo.style.color = "#f7f7f7";
-            aboutItem.style.color = "#121212";
-            portfolioItem.style.color = "#121212";
-            contactItem.style.color = "#121212";
+            aboutItem.style.color = "#525252";
+            portfolioItem.style.color = "#525252";
+            contactItem.style.color = "#525252";
         } else {
             navbar.style.background = "transparent";
             navbar.style.boxShadow = "0 0 0 rgba(0,0,0,0.4)";
