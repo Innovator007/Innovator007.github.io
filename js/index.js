@@ -3,6 +3,13 @@ var logo = document.querySelector(".logo");
 var aboutItem = document.getElementById("about-item");
 var portfolioItem = document.getElementById("portfolio-item");
 var contactItem = document.getElementById("contact-item");
+var loadingPage = document.getElementById("loading-page");
+var mainContent = document.getElementById("main-content");
+
+window.addEventListener("load", function() {
+    loadingPage.style.display = "none";
+    mainContent.style.display = "block";
+});
 
 
 if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
