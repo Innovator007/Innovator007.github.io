@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div id="loading-page"><div class="spinner"></div></div>
+	<div id="loading-page"><div class="triple-spinner"></div></div>
 	<div id="main-content" style="display: none;">
 		<nav class="navbar">
 			<div class="logo">
@@ -34,56 +34,65 @@
 			</a>
 		</div>
 		<div class="about-me-container" id="about">
-			<div class="heading-container">
+			<div data-animatable="animatable" class="heading-container">
 				<h2 class="topic-heading">About</h2>
 			</div>
 			<div class="about-me-grid">
 				<div class="about-me-content">
-					<p class="about-me-text">I am Iliyas Attarwala, a Software Developer with a great passion about coding and solving real world problems. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odit accusantium soluta repellendus? Saepe perspiciatis quaerat magnam hic fugiat, quo inventore quae, quisquam similique vel deserunt corporis sint, esse sapiente!</p>
+					<p class="about-me-text">
+						<span data-animatable="animatable">I am Iliyas Attarwala, a Software </span>
+						<span data-animatable="animatable">Developer with a great passion about </span> 
+						<span data-animatable="animatable">coding and solving real world problems.</span></p>
 				</div>
 				<div class="about-me-image">
-					<img class="about-image" src="./images/macbook_desk.jpg" alt="Macbook">
+					<img data-animatable="animatable" class="about-image" src="./images/macbook_desk.jpg" alt="Macbook">
 				</div>
 			</div>
 		</div>
 		<div class="portfolio-container">
-			<div class="heading-container">
+			<div data-animatable="animatable" class="heading-container">
 				<h2 class="topic-heading">Portfolio</h2>
 			</div>
 			<div class="projects-container">
-				<div class="project-card">
-					<div class="flex"><h3 class="project-name">Project Name</h3><span class="project-line"></span></div>
-					<image class="project-image" src="./images/macbook_desk.jpg" alt="Macbook" />
+				<div data-animatable="animatable" class="project-card">
+					<div class="flex"><h3 class="project-name">Yelpcamp</h3><span class="project-line"></span></div>
+					<image class="project-image" src="./images/yelpcamp.png" alt="Macbook" />
 					<p class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat illum magni sint, fugiat nulla at aperiam facilis sed corrupti eos nobis nesciunt nemo, adipisci modi ducimus mollitia dolorum eaque ad? </p>
-					<div class="project-link"><span>VISIT &#8250;</span></div>
+					<div class="project-link"><span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
 				</div>
-				<div class="project-card">
-						<div class="flex"><h3 class="project-name">Project Name</h3><span class="project-line"></span></div>
-					<image class="project-image" src="./images/macbook_desk.jpg" alt="Macbook" />
+				<div data-animatable="animatable" class="project-card">
+						<div class="flex"><h3 class="project-name">React Slack</h3><span class="project-line"></span></div>
+					<image class="project-image" src="./images/reactslack.png" alt="Macbook" />
 					<p class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat illum magni sint, fugiat nulla at aperiam facilis sed corrupti eos nobis nesciunt nemo, adipisci modi ducimus mollitia dolorum eaque ad? </p>
-					<div class="project-link"><span>VISIT &#8250;</span></div>
+					<div class="project-link"><span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
 				</div>
-				<div class="project-card">
-						<div class="flex"><h3 class="project-name">Project Name</h3><span class="project-line"></span></div>
-					<image class="project-image" src="./images/macbook_desk.jpg" alt="Macbook" />
+				<div data-animatable="animatable" class="project-card">
+						<div class="flex"><h3 class="project-name">Chatty</h3><span class="project-line"></span></div>
+					<image class="project-image" src="./images/chatty.png" alt="Macbook" />
 					<p class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat illum magni sint, fugiat nulla at aperiam facilis sed corrupti eos nobis nesciunt nemo, adipisci modi ducimus mollitia dolorum eaque ad? </p>
-					<div class="project-link"><span>VISIT &#8250;</span></div>
+					<div class="project-link"><span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
+				</div>
+				<div data-animatable="animatable" class="project-card">
+						<div class="flex"><h3 class="project-name">Emaily</h3><span class="project-line"></span></div>
+					<image class="project-image" src="./images/emaily.png" alt="Macbook" />
+					<p class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat illum magni sint, fugiat nulla at aperiam facilis sed corrupti eos nobis nesciunt nemo, adipisci modi ducimus mollitia dolorum eaque ad? </p>
+					<div class="project-link"><span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
 				</div>
 			</div>
 		</div>
 		<div class="contact-container">
-			<div class="heading-container">
+			<div data-animatable="animatable" class="heading-container">
 				<h2 class="topic-heading">Contact</h2>
 			</div>
 			<div class="contact-grid">
 				<div class="contact-content">
 					<div class="centered">
-						<h1 class="contact-content__heading"><i class="fa fa-handshake-o"></i> Let's meet up <br> and collaborate!</h2>
-						<p><i class="fa fa-map-marker" aria-hidden="true"></i> Ahmedabad, Gujarat, India - 380007</p>
-						<p><i class="fa fa-envelope" aria-hidden="true"></i> iliyasattarwala007@gmail.com</p>
-						<p><i class="fa fa-phone" aria-hidden="true"></i> +91 9106948029</p>
-						<h4 class="connect-heading">Connect with me on</h4>
-						<p class="social-icons">
+						<h1 data-animatable="animatable" class="contact-content__heading"><i class="fa fa-handshake-o"></i> Let's meet up <br> and collaborate!</h2>
+						<p data-animatable="animatable"><i class="fa fa-map-marker" aria-hidden="true"></i> Ahmedabad, Gujarat, India - 380007</p>
+						<p data-animatable="animatable"><i class="fa fa-envelope" aria-hidden="true"></i> iliyasattarwala007@gmail.com</p>
+						<p data-animatable="animatable"><i class="fa fa-phone" aria-hidden="true"></i> +91 9106948029</p>
+						<h4 data-animatable="animatable" class="connect-heading">Connect with me on</h4>
+						<p data-animatable="animatable" class="social-icons">
 							<a class="facebook-icon" target="_blank" href="https://www.facebook.com/iliyas.attarwala.7"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 							<a class="instagram-icon" target="_blank" href="https://www.instagram.com/i_m_a_007/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 							<a class="github-icon" target="_blank" href="https://github.com/Innovator007"><i class="fa fa-github-square" aria-hidden="true"></i></a>
@@ -94,19 +103,20 @@
 				</div>
 				<div class="contact-form-container">
 					<form class="contact-form">
-						<input type="text" required name="name" placeholder="Your Name">
-						<input type="email" required name="email" placeholder="Your Email">
-						<input type="text" name="subject" placeholder="Subject (Optional)">
-						<textarea name="message" rows="4" placeholder="Anything to say...!"></textarea>
-						<button type="submit" class="contact-btn">Send</button>
+						<input data-animatable="animatable" type="text" required name="name" placeholder="Your Name">
+						<input data-animatable="animatable" type="email" required name="email" placeholder="Your Email">
+						<input data-animatable="animatable" type="text" name="subject" placeholder="Subject (Optional)">
+						<textarea data-animatable="animatable" name="message" rows="4" placeholder="Anything to say...!"></textarea>
+						<button data-animatable="animatable" type="submit" class="contact-btn">Send</button>
 					</form>
 				</div>
 			</div>
 		</div>
 		<footer class="footer">
-			<h2 class="footer-heading">Made with <i class="fa fa-heart red-heart" aria-hidden="true"></i> by Iliyas Attarwala</h2>
+			<h2 data-animatable="animatable" class="footer-heading">Made with <i class="fa fa-heart red-heart" aria-hidden="true"></i> by Iliyas Attarwala</h2>
 		</footer>
 	</div>
 	<script src="./js/index.js"></script>
+	<script src="./js/animate.js"></script>
 </body>
 </html>
