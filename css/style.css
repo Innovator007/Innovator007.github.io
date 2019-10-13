@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
-
 @font-face {
     font-family: 'lsb';
     src: url('../fonts/leaguespartan-bold.woff2') format('woff2');/* Super Modern Browsers */
+}
+
+@font-face {
+    font-family: 'gtw';
+    src: url('../fonts/GTwalsheim.woff2') format('woff2');/* Super Modern Browsers */
 }
 
 *, body {
@@ -16,7 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Manjari', sans-serif;
+    font-family: 'gtw', sans-serif;
     font-size: 1.4rem;
 }
 
@@ -198,8 +201,18 @@ body {
     margin: 30px;
 }
 
-.about-me-image {
+.about-me-info {
     margin: 30px;
+}
+
+.about-me-info > p {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.about-me-info > h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 .about-me-text {
@@ -246,6 +259,7 @@ body {
 .project-name {
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 2px;
     font-size: 1.6rem;
 }
 
@@ -264,10 +278,10 @@ body {
 
 .project-line {
     height: 4px;
-    margin-top: 4px;
+    margin-top: 5px;
     margin-left: 10px;
     width: 7rem;
-    border-radius: 1px;
+    border-radius: 2px;
     background: #f7f7f7;
 }
 
@@ -373,7 +387,7 @@ body {
 input, textarea {
     padding: 2rem 3rem;
     font-size: 2rem;
-    font-family: "Manjari", sans-serif;
+    font-family: "gtw", sans-serif;
     width: 100%;
     border-radius: 5px;
     border: 1px solid #b5b5b5;
@@ -390,10 +404,11 @@ input:active, input:focus, textarea:focus, textarea:active {
 
 .contact-btn {
     width: 100%;
-    padding: 2rem;
+    height: 60px;
+    padding: 0 2rem;
     background: #121212;
     color: #f7f7f7;
-    font-family: "Manjari", sans-serif;
+    font-family: "gtw", sans-serif;
     font-size: 2rem;
     cursor: pointer;
     letter-spacing: 2px;
@@ -402,15 +417,64 @@ input:active, input:focus, textarea:focus, textarea:active {
     border: none;
     border-radius: 5px;
     transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.success-contact {
+    border: 1px solid #05ff26;
+    color: #05ff26;
+    padding: 2rem;
+    display: none;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.success-contact > .close, .error-contact > .close {
+    position: absolute;
+    right: 20px;
+    font-weight: 300;
+    font-size: 3rem;
+    cursor: pointer;
+    top: 50%;
+    transform: translate(0 ,-50%);
+}
+
+.error-contact {
+    border: 1px solid #f73444;
+    color: #f73444;
+    padding: 2rem;
+    display: none;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    position: relative;
+    margin: 1rem 0;
+}
+
 
 .contact-btn:active, .contact-btn:focus {
     outline: none;
 }
 
 .contact-btn:active {
-    transform: scale(0.95);
     box-shadow: 3px 3px 4px rgba(0,0,0,0.4);
+}
+
+.btn-loading {
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-top: 2px solid #121212; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .footer {

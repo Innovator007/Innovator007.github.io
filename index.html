@@ -6,6 +6,12 @@
 	<title>Iliyas Attarwala | Software Developer Portfolio</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
+	<script type="text/javascript">
+        (function(){
+           emailjs.init('user_gv3cuEmUW8JYnPIABk1zr');
+        })();
+    </script>
 </head>
 <body>
 	<div id="loading-page"><div class="triple-spinner"></div></div>
@@ -15,9 +21,9 @@
 				<span>IA</span>
 			</div>
 			<div class="menu">
-				<p id="about-item">About</p>
-				<p id="portfolio-item">Portfolio</p>
-				<p id="contact-item">Contact</p>
+				<p onclick="slideTo('about')" id="about-item">About</p>
+				<p onclick="slideTo('portfolio')" id="portfolio-item">Portfolio</p>
+				<p onclick="slideTo('contact')" id="contact-item">Contact</p>
 			</div>
 		</nav>
 		<div class="container__main">
@@ -25,13 +31,11 @@
 				<h1 class="heading__main hero__text">Iliyas Attarwala</h1>
 				<h3 class="hero__title">Software Developer</h3>
 			</div>
-			<a href="#about">
-				<div class="arrow-container">
-					<span class="arrow"></span>
-					<span class="arrow"></span>
-					<span class="arrow"></span>
-				</div>
-			</a>
+			<div onclick="slideTo('about')" class="arrow-container">
+				<span class="arrow"></span>
+				<span class="arrow"></span>
+				<span class="arrow"></span>
+			</div>
 		</div>
 		<div class="about-me-container" id="about">
 			<div data-animatable="animatable" class="heading-container">
@@ -41,15 +45,22 @@
 				<div class="about-me-content">
 					<p class="about-me-text">
 						<span data-animatable="animatable">I am Iliyas Attarwala, a Software </span>
-						<span data-animatable="animatable">Developer with a great passion about </span> 
+						<span data-animatable="animatable">Developer currently in my junior year living in Ahmedabad, India with a great passion about </span> 
 						<span data-animatable="animatable">coding and solving real world problems.</span></p>
 				</div>
-				<div class="about-me-image">
-					<img data-animatable="animatable" class="about-image" src="./images/macbook_desk.jpg" alt="Macbook">
+				<div class="about-me-info">
+					<h3>SKILLSET:</h3>
+					<p>Web Development</p>
+					<p>JavaScript - React.js, Node.js</p>
+					<p>Python</p>
+					<p>Data Structures</p>
+					<p>Algorithms</p>
+					<p>C++</p>
+					<p>Core Java</p>
 				</div>
 			</div>
 		</div>
-		<div class="portfolio-container">
+		<div id="portfolio" class="portfolio-container">
 			<div data-animatable="animatable" class="heading-container">
 				<h2 class="topic-heading">Portfolio</h2>
 			</div>
@@ -80,7 +91,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="contact-container">
+		<div id="contact" class="contact-container">
 			<div data-animatable="animatable" class="heading-container">
 				<h2 class="topic-heading">Contact</h2>
 			</div>
@@ -102,11 +113,19 @@
 					</div>
 				</div>
 				<div class="contact-form-container">
-					<form class="contact-form">
-						<input data-animatable="animatable" type="text" required name="name" placeholder="Your Name">
-						<input data-animatable="animatable" type="email" required name="email" placeholder="Your Email">
-						<input data-animatable="animatable" type="text" name="subject" placeholder="Subject (Optional)">
-						<textarea data-animatable="animatable" name="message" rows="4" placeholder="Anything to say...!"></textarea>
+					<form onsubmit="mail(event)" class="contact-form">
+						<div class="success-contact">
+							<p>Thank you, your message has been received!</p>
+							<span class="close">&times;</span>
+						</div>
+						<div class="error-contact">
+							<p>Error occured, please try again!</p>
+							<span class="close">&times;</span>
+						</div>
+						<input id="name" data-animatable="animatable" type="text" required name="name" placeholder="Your Name">
+						<input id="email" data-animatable="animatable" type="email" required name="email" placeholder="Your Email">
+						<input id="subject" data-animatable="animatable" type="text" name="subject" placeholder="Subject (Optional)">
+						<textarea required id="message" data-animatable="animatable" name="message" rows="4" placeholder="Anything to say...!"></textarea>
 						<button data-animatable="animatable" type="submit" class="contact-btn">Send</button>
 					</form>
 				</div>

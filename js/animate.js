@@ -1,6 +1,5 @@
 function animate(container, isOnTop=false) {
     var parent = document.querySelector(container);
-    console.log(parent);
     var childrens = [];
     for (var i=0;i<parent.childNodes.length;i++) {
         if(parent.childNodes[i].dataset && parent.childNodes[i].dataset.animatable == "animatable") {
@@ -8,7 +7,6 @@ function animate(container, isOnTop=false) {
             childrens.push(parent.childNodes[i]);
         }
     }
-    console.log(childrens);
     
     function routine() {
         var scroll_pos = document.documentElement.scrollTop + document.documentElement.clientHeight;
