@@ -77,17 +77,12 @@ body {
     color: #121212;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 1px;
-    font-size: 3rem;
-    display: flex;
-    padding-top: 0.6rem;
-    padding-left: 2px;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
+}
+.logo > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .menu {
