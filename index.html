@@ -22,7 +22,7 @@
 			</div>
 			<div class="menu">
 				<p onclick="slideTo('about')" id="about-item">About</p>
-				<p onclick="slideTo('portfolio')" id="portfolio-item">Portfolio</p>
+				<p onclick="slideTo('portfolio')" id="portfolio-item">Projects</p>
 				<p onclick="slideTo('contact')" id="contact-item">Contact</p>
 			</div>
 		</nav>
@@ -49,47 +49,29 @@
 						<span data-animatable="animatable">coding and solving real world problems.</span></p>
 				</div>
 				<div class="about-me-info">
-					<h3>SKILLSET:</h3>
-					<p>Web Development</p>
-					<p>JavaScript - React.js, Node.js</p>
-					<p>Python</p>
-					<p>Data Structures</p>
-					<p>Algorithms</p>
-					<p>C++</p>
-					<p>Core Java</p>
+					<h3 data-animatable="animatable">SKILLSET:</h3>
+					<p data-animatable="animatable">Web Development</p>
+					<p data-animatable="animatable">JavaScript - React.js, Node.js</p>
+					<p data-animatable="animatable">Python</p>
+					<p data-animatable="animatable">Data Structures</p>
+					<p data-animatable="animatable">Algorithms</p>
+					<p data-animatable="animatable">C++</p>
+					<p data-animatable="animatable">Core Java</p>
 				</div>
 			</div>
 		</div>
 		<div id="portfolio" class="portfolio-container">
 			<div data-animatable="animatable" class="heading-container">
-				<h2 class="topic-heading">Portfolio</h2>
+				<h2 class="topic-heading">Projects</h2>
 			</div>
-			<div class="projects-container">
-				<div data-animatable="animatable" class="project-card">
-					<div class="flex"><h3 class="project-name">Yelpcamp</h3><span class="project-line"></span></div>
-					<image class="project-image" src="./images/yelpcamp.png" alt="Macbook" />
-					<p class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat illum magni sint, fugiat nulla at aperiam facilis sed corrupti eos nobis nesciunt nemo, adipisci modi ducimus mollitia dolorum eaque ad? </p>
-					<div class="project-link"><span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
-				</div>
-				<div data-animatable="animatable" class="project-card">
-						<div class="flex"><h3 class="project-name">React Slack</h3><span class="project-line"></span></div>
-					<image class="project-image" src="./images/reactslack.png" alt="Macbook" />
-					<p class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat illum magni sint, fugiat nulla at aperiam facilis sed corrupti eos nobis nesciunt nemo, adipisci modi ducimus mollitia dolorum eaque ad? </p>
-					<div class="project-link"><span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
-				</div>
-				<div data-animatable="animatable" class="project-card">
-						<div class="flex"><h3 class="project-name">Chatty</h3><span class="project-line"></span></div>
-					<image class="project-image" src="./images/chatty.png" alt="Macbook" />
-					<p class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat illum magni sint, fugiat nulla at aperiam facilis sed corrupti eos nobis nesciunt nemo, adipisci modi ducimus mollitia dolorum eaque ad? </p>
-					<div class="project-link"><span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
-				</div>
-				<div data-animatable="animatable" class="project-card">
-						<div class="flex"><h3 class="project-name">Emaily</h3><span class="project-line"></span></div>
-					<image class="project-image" src="./images/emaily.png" alt="Macbook" />
-					<p class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat illum magni sint, fugiat nulla at aperiam facilis sed corrupti eos nobis nesciunt nemo, adipisci modi ducimus mollitia dolorum eaque ad? </p>
-					<div class="project-link"><span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span></div>
-				</div>
+			<div class="project-selection">
+				<p data-animatable="animatable" onclick="selectCategory('all')" id="all" class="category-selected">ALL</p>
+				<p data-animatable="animatable" onclick="selectCategory('react')" id="react">React</p>
+				<p data-animatable="animatable" onclick="selectCategory('full stack')" id="full stack">Full Stack</p>
+				<p data-animatable="animatable" onclick="selectCategory('python')" id="python">Python</p>
+				<p data-animatable="animatable" onclick="selectCategory('front end')" id="front end">Front End</p>
 			</div>
+			<div class="projects-container"></div>
 		</div>
 		<div id="contact" class="contact-container">
 			<div data-animatable="animatable" class="heading-container">
@@ -137,5 +119,7 @@
 	</div>
 	<script src="./js/index.js"></script>
 	<script src="./js/animate.js"></script>
+	<script src="./js/projects.js"></script>
+	<script src="./js/email.js"></script>
 </body>
 </html>

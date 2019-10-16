@@ -266,7 +266,7 @@ body {
 .project-image {
     width: 100%;
     height: 30rem;
-    margin: 10px 0;
+    margin: 1rem 0;
     border-radius: 3px;
     cursor: pointer;
     transition: 0.4s cubic-bezier(.72,.16,.345,.875);
@@ -279,12 +279,47 @@ body {
 .project-line {
     height: 4px;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 1rem;
     width: 7rem;
     border-radius: 2px;
     background: #f7f7f7;
 }
 
+.project-visit {
+    text-decoration: none;
+    color: #f7f7f7;
+    padding: 1rem 2rem;
+    letter-spacing: 1.5px;
+    border-radius: 0.5rem;
+    transition: all 0.4s;
+}
+
+.project-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-selection > * {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.category-selected {
+    background: #f7f7f7;
+    color: #121212;
+}
+
+.project-visit:hover {
+    background: #f7f7f7;
+    color: #121212;
+}
 .project-desc {
     font-weight: 300;
     font-size: 1.8rem;
@@ -295,7 +330,6 @@ body {
 .project-link {
     text-align: right;
     font-size: 1.5rem;
-    margin-right: 1rem;
     font-weight: 900;
     cursor: pointer;
 }

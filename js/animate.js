@@ -14,7 +14,7 @@ function animate(container, isOnTop=false) {
         for(var i=0;i<childrens.length;i++) {
             if((childrens[i].offsetTop + childrens[i].style.height)  < scroll_pos - 0.25*innerHeight || window.scrollY > document.body.scrollHeight - 1.1*innerHeight || isOnTop) {
                 childrens[i].style.opacity = '0';
-                childrens[i].style.transform =`translateY(${30 + i*4}px) rotate(-5deg)`;
+                childrens[i].style.transform =`translateY(${16 + i*4}px) rotate(-5deg)`;
                 childrens[i].style.animationDelay =String(Number(i*100)) + "ms";
                 childrens[i].classList.add("slide-up-opacity-animation");
             }
@@ -37,8 +37,8 @@ function animate(container, isOnTop=false) {
 animate("#about");
 animate(".portfolio-container");
 animate(".about-me-text");
-animate(".about-me-image");
-animate(".projects-container");
+animate(".about-me-info");
+animate(".project-selection");
 animate(".contact-container");
 animate(".centered");
 animate(".contact-form");
