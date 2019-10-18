@@ -15,7 +15,7 @@ function animate(container, isOnTop=false) {
             if((childrens[i].offsetTop + childrens[i].style.height)  < scroll_pos - 0.25*innerHeight || window.scrollY > document.body.scrollHeight - 1.1*innerHeight || isOnTop) {
                 childrens[i].style.opacity = '0';
                 childrens[i].style.transform =`translateY(${16 + i*4}px) rotate(-5deg)`;
-                childrens[i].style.animationDelay =String(Number(i*100)) + "ms";
+                childrens[i].style.animationDelay =String(Number(i*50)) + "ms";
                 childrens[i].classList.add("slide-up-opacity-animation");
             }
             if(childrens[i].classList.contains("slide-up-opacity-animation")){

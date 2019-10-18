@@ -193,27 +193,46 @@ body {
 }
 
 .about-me-content {
-    margin: 30px;
+    margin: 1rem 3rem;
 }
 
 .about-me-info {
-    margin: 30px;
+    margin: 3rem;
+    text-align: center;
 }
 
-.about-me-info > p {
-    font-size: 1.8rem;
-    margin: 1rem 0;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.skills-container > p {
+    font-size: 2rem;
+    margin: 1rem 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container > p > img {
+    margin-bottom: 2rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 .about-me-info > h3 {
-    font-size: 2rem;
-    letter-spacing: 2px;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    margin: 5rem 0 2rem 0;
 }
 
 .about-me-text {
     font-size: 2.5rem;
     letter-spacing: 2px;
-    line-height: 35px;
+    line-height: 3.5rem;
+    text-align: center;
 }
 
 .about-image {
@@ -264,11 +283,6 @@ body {
     margin: 1rem 0;
     border-radius: 3px;
     cursor: pointer;
-    transition: 0.4s cubic-bezier(.72,.16,.345,.875);
-}
-
-.project-image:hover {
-    transform: scale(1.03);
 }
 
 .project-line {
@@ -293,6 +307,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2rem auto 1.5rem auto;
 }
 
 .project-selection > * {
@@ -327,6 +342,7 @@ body {
     font-size: 1.5rem;
     font-weight: 900;
     cursor: pointer;
+    margin-top: 2rem;
 }
 
 .contact-container {
@@ -514,7 +530,7 @@ input:active, input:focus, textarea:focus, textarea:active {
 }
 
 .footer-heading {
-    font-family: 'lsb';
+    font-family: 'gtw';
     font-size: 1.8rem;
     text-align: center;
 }
