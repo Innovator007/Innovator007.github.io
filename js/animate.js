@@ -38,6 +38,7 @@ animate("#about");
 animate(".portfolio-container");
 animate(".about-me-text");
 animate(".about-me-info");
+animate(".skills-container");
 animate(".project-selection");
 animate(".contact-container");
 animate(".centered");

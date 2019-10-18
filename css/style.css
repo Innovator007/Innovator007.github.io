@@ -203,7 +203,7 @@ body {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .skills-container > p {
@@ -224,6 +224,7 @@ body {
 
 .about-me-info > h3 {
     font-size: 3rem;
+    text-transform: uppercase;
     letter-spacing: 0.4rem;
     margin: 5rem 0 2rem 0;
 }
