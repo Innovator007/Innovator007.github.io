@@ -55,6 +55,8 @@ body {
     display: flex;
 }
 
+textarea {resize: none}
+
 
 .navbar {
     position: fixed;
