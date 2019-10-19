@@ -66,19 +66,22 @@ var projects = [
 ]
 
 
+var new_projects = projects;
+
 function selectCategory(category) {
     var newProjects = projects.filter(function(project) {
         return project.tags.includes(category);
     });
     document.querySelector(".category-selected").classList.remove("category-selected");
     document.getElementById(category).classList.add("category-selected");
+    new_projects = newProjects;
     updateCards(newProjects,false);
 }
 
 function updateCards(projects, onFirsttimeLoad) {
     var items = 0;
     projectContainer.innerHTML = "";
-    projects.forEach((project) => {
+    projects.forEach((project, index) => {
         var div = document.createElement("div");
         div.dataset.animatable = "animatable";
         div.className= "project-card";
@@ -87,8 +90,7 @@ function updateCards(projects, onFirsttimeLoad) {
                     <h3 class="project-name">${project.name}</h3>
                     <span class="project-line"></span>
                 </div>
-                <image class="project-image" src="./images/${project.image}" alt="${project.name}'s Image" />
-                <p class="project-desc">${project.desc}</p>
+                <image onclick='openModal(${index})' class="project-image" src="./images/${project.image}" alt="${project.name}'s Image" />
                 <div class="project-link">
                     <a class="project-visit" href="${project.link}" target="_blank">
                         <span>VISIT <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
@@ -103,5 +105,18 @@ function updateCards(projects, onFirsttimeLoad) {
         }
     });
 }
+
+function openModal(index) {
+    document.querySelector(".modal").style.display = "block";
+    document.querySelector(".modal-content").classList.add("modal-animation");
+    document.querySelector(".modal-content__title").innerHTML = new_projects[index].name;
+    document.querySelector(".modal-content__image").src = "./images/" + new_projects[index].image;
+    document.querySelector(".modal-content__desc").innerHTML = new_projects[index].desc;
+    document.querySelector(".modal-content__link").href = new_projects[index].link;
+}
+
+document.querySelector(".modal-close").addEventListener("click", function() {
+    document.querySelector(".modal").style.display = "none";
+});
 
 updateCards(projects, true);

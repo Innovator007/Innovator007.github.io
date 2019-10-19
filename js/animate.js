@@ -6,8 +6,7 @@ function animate(container, isOnTop=false) {
             parent.childNodes[i].style.opacity = '0';
             childrens.push(parent.childNodes[i]);
         }
-    }
-    
+    }   
     function routine() {
         var scroll_pos = document.documentElement.scrollTop + document.documentElement.clientHeight;
         var animatedCount = 0;

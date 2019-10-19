@@ -28,7 +28,7 @@ if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navig
     function scrollFunction() {
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             navbar.style.background = "#f7f7f7";
-            navbar.style.boxShadow = "0 3px 8px rgba(0,0,0,0.4)";
+            navbar.style.boxShadow = "0 1px 4px rgba(0,0,0,0.4)";
             logo.style.background = "#121212";
             logo.style.color = "#f7f7f7";
             aboutItem.style.color = "#525252";
