@@ -291,7 +291,7 @@ textarea {resize: none}
 }
 
 .about-me-info {
-    margin: 3rem;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -448,9 +448,9 @@ textarea {resize: none}
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
         left: 60px;
-        border: medium solid white;
+        border: medium solid #f7f7f7;
         border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
+        border-color: transparent #f7f7f7 transparent transparent;
     }
   
     /* Make sure all circles are at the same spot */
@@ -495,6 +495,55 @@ textarea {resize: none}
 .work-company__logo {
     width: 20rem;
     height: auto;
+}
+
+.recommendations-container {
+    margin: 0 auto;
+    width: 90%;
+    padding: 3rem;
+    text-align: left;
+    overflow: hidden;
+}
+
+.recommendation-card {
+    width: 100%;
+    text-align: left;
+    float: left;
+    background: #fff;
+    color: #121212;
+    font-size:2rem;
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    position: relative;
+    transition-duration: .4s;
+    overflow: hidden;
+}
+
+.recommendation-card:nth-child(1) {
+    margin-bottom: 2rem;
+}
+
+.recommendation-card::before {
+    content: "\201C";
+    position: absolute;
+    font-size: 20rem;
+    top: -2rem;
+    left: 0rem;
+    line-height: 1;
+    color: rgba(0,0,0, 0.2);
+    font-family: sans-serif;
+    z-index: 1;
+}
+
+.recommendation {
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.recommender {
+    text-align: right;
+    margin-right: 2rem;
 }
 
 .portfolio-container {
@@ -837,7 +886,7 @@ input:active, input:focus, textarea:focus, textarea:active {
     left: 15px;
     right: 15px;
     bottom: 15px;
-    border-top-color: #eee;
+    border-top-color: #f7f7f7;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.75s linear infinite;
 }
