@@ -114,6 +114,7 @@ animate(".contact-container");
 animate(".centered");
 animate(".contact-form");
 animate(".footer");
+animate(".recommendations-container");
 
 
 // Projects
