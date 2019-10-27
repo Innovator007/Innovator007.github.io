@@ -23,13 +23,18 @@ function displayContent() {
 function slideTo(id,isInNavigation) {
     var element = document.getElementById(id);
     if(isInNavigation) {
-        document.getElementById('nav-toggle').checked = false;
-        setTimeout(function() {
+        if(typeof window.orientation !== 'undefined' || (window.navigator.userAgent.toLowerCase().includes('mobi'))) {
             window.scrollTo({
                 top: element.offsetTop,
                 behavior: 'smooth'
             });
-        },700);
+        } else {
+            document.getElementById('nav-toggle').checked = false;
+            window.scrollTo({
+                top: element.offsetTop,
+                behavior: 'smooth'
+            });
+        }
     } else {
         window.scrollTo({
             top: element.offsetTop,
