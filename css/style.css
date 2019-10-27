@@ -150,51 +150,142 @@ body {
 
 textarea {resize: none}
 
-
-.navbar {
+/* Navbar-circle */
+.navigation-checkbox {
+    display: none; }
+  
+  .navigation-button {
+    background-color: #eee;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .navigation-background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4.5rem;
+    right: 4.5rem;
+    background-image: radial-gradient(#f7f7f7, #666);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    /* 900px */
+    /* 600px */ }
+  
+  .navigation-nav {
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: auto;
-    z-index: 1000000;
-    padding: 10px 50px;
-    margin: 0;
-    transition: all 0.5s;
-}
+    z-index: 1500;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  
+  .navigation-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%; }
+  
+  .navigation-item {
+    margin: 2rem;
+    cursor: pointer; }
+  
+  .navigation-link {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: #121212;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #121212 50%);
+    background-size: 230%;
+    transition: all .4s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; }
+    .navigation-link:link span, .navigation-link:visited span {
+      margin-right: 1.5rem;
+      display: inline-block; }
+  
+  .navigation-link:hover, .navigation-link:active {
+    background-position: 100%;
+    color: #f7f7f7;
+    transform: translateX(-2rem); }
+  
+  .navigation-checkbox:checked ~ .navigation-background {
+    transform: scale(80); }
+  
+  .navigation-checkbox:checked ~ .navigation-nav {
+    opacity: 1;
+    visibility: visible;
+    width: 100%; }
+  
+  .navigation-icon {
+    position: relative;
+    margin-top: 3.5rem; }
+    .navigation-icon, .navigation-icon::before, .navigation-icon::after {
+      width: 3rem;
+      height: 2px;
+      background-color: #121212;
+      display: inline-block; }
+    .navigation-icon::before, .navigation-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .navigation-icon::before {
+      top: -.8rem; }
+    .navigation-icon::after {
+      top: .8rem; }
+  
+  .navigation-button:hover .navigation-icon::before {
+    top: -1rem; }
+  
+  .navigation-button:hover .navigation-icon::after {
+    top: 1rem; }
+  .navigation-checkbox:checked + .navigation-button {
+      background: #121212;
+  }
+
+  .navigation-checkbox:checked + .navigation-button .navigation-icon {
+    background-color: transparent; }
+  
+  .navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+    top: 0;
+    background-color: #f7f7f7;
+    transform: rotate(135deg); }
+  
+  .navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+    top: 0;
+    background-color: #f7f7f7;
+    transform: rotate(-135deg); }
+
 
 .logo {
-    background-color: #f7f7f7;
-    color: #121212;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
-.logo > img {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.menu {
-    text-align: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu > p {
-    color: rgba(255,255,255,0.7);
-    font-family: 'lsb';
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    cursor: pointer;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 0.5rem;
 }
 
 .container__main {
@@ -932,8 +1023,17 @@ input:active, input:focus, textarea:focus, textarea:active {
 
 
 @media(max-width: 480px) {
-    .navbar {
-        display: none;
+    .logo {
+        top: 3.5rem;
+        left: 3rem;
+    }
+    .navigation-button {
+        top: 3rem;
+        right: 3rem;
+    }
+    .navigation-background {
+        top: 3.5rem;
+        right: 3.5rem;
     }
     .hero__text {
         font-size: 5rem;
@@ -1052,5 +1152,5 @@ input:active, input:focus, textarea:focus, textarea:active {
     .about-me-info > h3 {
         font-size: 2rem;
         margin: 3rem 0;
-    }
+    }   
 }
