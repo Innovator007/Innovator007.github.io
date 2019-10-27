@@ -788,7 +788,7 @@ input:active, input:focus, textarea:focus, textarea:active {
 
 .contact-btn {
     width: 100%;
-    height: 60px;
+    height: 6rem;
     padding: 0 2rem;
     background: #121212;
     color: #f7f7f7;
@@ -1023,6 +1023,9 @@ input:active, input:focus, textarea:focus, textarea:active {
 
 
 @media(max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
     .logo {
         top: 3.5rem;
         left: 3rem;
@@ -1034,6 +1037,8 @@ input:active, input:focus, textarea:focus, textarea:active {
     .navigation-background {
         top: 3.5rem;
         right: 3.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
     .hero__text {
         font-size: 5rem;
@@ -1088,7 +1093,7 @@ input:active, input:focus, textarea:focus, textarea:active {
     }
     .recommendation-card::before {
         top: -2rem;
-        left: -2rem;
+        left: -1.8rem;
         font-size: 15rem;
     }
     .recommendation {
