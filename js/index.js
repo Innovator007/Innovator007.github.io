@@ -30,10 +30,12 @@ function slideTo(id,isInNavigation) {
             });
         } else {
             document.getElementById('nav-toggle').checked = false;
-            window.scrollTo({
-                top: element.offsetTop,
-                behavior: 'smooth'
-            });
+            setTimeout(function() {
+                window.scrollTo({
+                    top: element.offsetTop,
+                    behavior: 'smooth'
+                });
+            },700);
         }
     } else {
         window.scrollTo({
