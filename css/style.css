@@ -150,6 +150,13 @@ body {
 
 textarea {resize: none}
 
+.desktoponly {
+    display: block;
+}
+.mobileonly {
+    display: none;
+}
+
 .resume-options {
     position: absolute;
     background: #f7f7f7;
@@ -1089,7 +1096,7 @@ input:active, input:focus, textarea:focus, textarea:active {
         height: 4.5rem;
     }
     .hero__text {
-        font-size: 5rem;
+        font-size: 4rem;
         margin: 1rem 0;
     }
     .hero__title {
@@ -1186,6 +1193,12 @@ input:active, input:focus, textarea:focus, textarea:active {
     }
     .contact-form {
         width: 95%;
+    }
+    .desktoponly {
+        display: none;
+    }
+    .mobileonly {
+        display: block;
     }
     .modal-content {
         width: 90%;
