@@ -150,6 +150,51 @@ body {
 
 textarea {resize: none}
 
+.resume-options {
+    position: absolute;
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: 1rem;
+    top: 250%;
+    left: 50%;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    transition: all 0.4s;
+    transform: translate(-50%,80%) scale(0.6);
+}
+
+.view-resume-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.resume-options > button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    font-family: 'gtw';
+    border-radius: 0.4rem;
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    transition: all 0.4s;
+}
+
+.resume-options > button:hover {
+    color: #f7f7f7;
+    background-color: #121212;
+}
+
+.resume-options > button:active, .resume-options > button:focus {
+    outline: none;
+}
+
 /* Navbar-circle */
 .navigation-checkbox {
     display: none; }
@@ -1025,6 +1070,9 @@ input:active, input:focus, textarea:focus, textarea:active {
 @media(max-width: 480px) {
     html {
         font-size: 50%;
+    }
+    .resume-options {
+        top: 300%;
     }
     .logo {
         top: 3.5rem;

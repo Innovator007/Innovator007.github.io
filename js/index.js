@@ -20,6 +20,26 @@ function displayContent() {
     mainContent.style.display = "block";
 }
 
+function toggleResume() {
+    var resumeOptions = document.querySelector('.resume-options');
+    resumeOptions.classList.toggle('view-resume-options');
+    if(resumeOptions.className === "resume-options view-resume-options") {
+        document.querySelector('.resume-link').innerHTML = "Close";
+    } else {
+        document.querySelector('.resume-link').innerHTML = "Resume";
+    }
+}
+
+function downloadResume() {
+    document.getElementById('download-resume').click();
+    toggleResume();
+}
+
+function viewResume() {
+    document.getElementById('view-resume').click();
+    toggleResume();
+}
+
 function slideTo(id,isInNavigation) {
     var element = document.getElementById(id);
     if(isInNavigation) {
