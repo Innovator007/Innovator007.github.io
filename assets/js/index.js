@@ -223,7 +223,7 @@ function updateCards(projects, onFirsttimeLoad) {
                     <h3 class="project-name">${project.name}</h3>
                     <span class="project-line"></span>
                 </div>
-                <image onclick='openModal(${index})' class="project-image" src="./images/${project.image}" alt="${project.name}'s Image" />
+                <image onclick='openModal(${index})' class="project-image" src="./assets/images/${project.image}" alt="${project.name}'s Image" />
                 <p class="project-desc">${project.desc.substring(0,100)}...</p>
                 <div class="project-link">
                     <a class="project-visit" href="${project.link}" target="_blank">
