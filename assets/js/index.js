@@ -244,7 +244,7 @@ function openModal(index) {
     document.querySelector(".modal").style.display = "block";
     document.querySelector(".modal-content").classList.add("modal-animation");
     document.querySelector(".modal-content__title").innerHTML = new_projects[index].name;
-    document.querySelector(".modal-content__image").src = "./images/" + new_projects[index].image;
+    document.querySelector(".modal-content__image").src = "./assets/images/" + new_projects[index].image;
     document.querySelector(".modal-content__desc").innerHTML = new_projects[index].desc;
     document.querySelector(".modal-content__link").href = new_projects[index].link;
 }
