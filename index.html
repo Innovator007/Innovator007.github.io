@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,34 +14,41 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
+
 <body>
-	<div id="loading-page"><div class="triple-spinner"></div></div>
+	<div id="loading-page">
+		<div class="triple-spinner"></div>
+	</div>
 	<div id="main-content" style="display: none;">
 		<div class="navigation">
 			<input type="checkbox" id="nav-toggle" class="navigation-checkbox">
-			<label class="navigation-button" for="nav-toggle">                
-				<span class="navigation-icon">&nbsp;</span>            
-			</label>            
-			<div class="navigation-background">                
-				&nbsp;            
-			</div>            
-			<nav class="navigation-nav">                
-				<ul class="navigation-list">                    
-					<li class="navigation-item"><span onclick="slideTo('about',true)" class="navigation-link">About</span></li>                    
-					<li class="navigation-item"><span onclick="slideTo('portfolio',true)" class="navigation-link">Projects</span></li>                    
-					<li class="navigation-item"><span onclick="slideTo('contact',true)" class="navigation-link">Contact</span></li>
-					<li class="navigation-item mobileonly"><a href="./assets/documents/iliyas_attarwala_resume.pdf" download class="navigation-link">Resume</a></li>                                
+			<label class="navigation-button" for="nav-toggle">
+				<span class="navigation-icon">&nbsp;</span>
+			</label>
+			<div class="navigation-background">
+				&nbsp;
+			</div>
+			<nav class="navigation-nav">
+				<ul class="navigation-list">
+					<li class="navigation-item"><span onclick="slideTo('about',true)"
+							class="navigation-link">About</span></li>
+					<li class="navigation-item"><span onclick="slideTo('portfolio',true)"
+							class="navigation-link">Projects</span></li>
+					<li class="navigation-item"><span onclick="slideTo('contact',true)"
+							class="navigation-link">Contact</span></li>
+					<li class="navigation-item mobileonly"><a href="./assets/documents/IliyasAttarwalaResume.pdf"
+							download class="navigation-link">Resume</a></li>
 					<li style="position: relative;" class="navigation-item desktoponly">
 						<span onclick="toggleResume()" class="navigation-link resume-link">Resume</span>
 						<div class="resume-options">
 							<button onclick="downloadResume()">Download as PDF</button>
 							<button onclick="viewResume()">View in Browser</button>
-							<a id="download-resume" href="./assets/documents/iliyas_attarwala_resume.pdf" download></a>
-							<a target="_blank" id="view-resume" href="./assets/documents/iliyas_attarwala_resume.pdf"></a>
-						</div> 
-					</li>                                
-				</ul>              
-			</nav>     
+							<a id="download-resume" href="./assets/documents/IliyasAttarwalaResume.pdf" download></a>
+							<a target="_blank" id="view-resume" href="./assets/documents/IliyasAttarwalaResume.pdf"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
 		</div>
 		<div class="container__main">
 			<img loading="lazy" class="logo" src="./assets/images/logo.png" alt="Logo">
@@ -61,10 +69,12 @@
 			<div>
 				<div class="about-me-content">
 					<p class="about-me-text">
-						<span data-animatable="animatable">Hello friend, Welcome to my space of the world!</span><br>
+						<span data-animatable="animatable">Hey mate, Welcome to my space of the world!</span><br>
 						<span data-animatable="animatable">I am Iliyas Attarwala, a Software </span>
-						<span data-animatable="animatable">Developer currently in my junior year living in Ahmedabad, India with a great passion about </span> 
-						<span data-animatable="animatable">coding and solving real world problems.</span></p>
+						<span data-animatable="animatable">Developer currently in my junior year living in Ahmedabad,
+							India with a great passion about </span>
+						<span data-animatable="animatable">coding and solving real world problems.</span>
+					</p>
 				</div>
 				<div class="about-me-info">
 					<h3 data-animatable="animatable">SKILLS</h3>
@@ -78,8 +88,8 @@
 							Javascript
 						</p>
 						<p data-animatable="animatable">
-								<img loading="lazy" src="./assets/images/reactnative.png">
-								React.js, React Native
+							<img loading="lazy" src="./assets/images/reactnative.png">
+							React.js, React Native
 						</p>
 						<p data-animatable="animatable">
 							<img loading="lazy" src="./assets/images/nodejs.png">
@@ -121,28 +131,49 @@
 					<h3 data-animatable="animatable">Work/Internships</h3>
 					<div class="work-container">
 						<div class="timeline">
+							<div class="container right">
+								<div id="work-first" class="work-card">
+									<div data-animatable="animatable" class="work-profile">Lead Software Engineer
+									</div>
+									<div data-animatable="animatable" class="work-company">Recorem
+									</div>
+									<p data-animatable="animatable" class="work-period">Jun 2021 - Present</p>
+									<p data-animatable="animatable">Working on the product of the company as a lead
+										software engineer focusing on Backend, Database and Devops and managing the
+										development front.</p>
+								</div>
+							</div>
 							<div class="container left">
 								<div id="work-first" class="work-card">
-									<div data-animatable="animatable" class="work-profile">Software Developer Intern</div>
-									<div data-animatable="animatable" class="work-company">Redefined Corp (Internship)</div>
-									<p data-animatable="animatable" class="work-period">Jan 2020 - Present</p>
+									<div data-animatable="animatable" class="work-profile">Software Developer Intern
+									</div>
+									<div data-animatable="animatable" class="work-company">Recorem (Internship)
+									</div>
+									<p data-animatable="animatable" class="work-period">Jan 2020 - Sept 2020</p>
 									<p data-animatable="animatable">Working on the product of the company.</p>
 								</div>
 							</div>
 							<div class="container right">
 								<div id="work-first" class="work-card">
 									<div data-animatable="animatable" class="work-profile">MERN Stack Intern</div>
-									<div data-animatable="animatable" class="work-company">Novaturient AI (Internship)</div>
+									<div data-animatable="animatable" class="work-company">Novaturient AI (Internship)
+									</div>
 									<p data-animatable="animatable" class="work-period">Aug 2019 - Nov 2019</p>
-									<p data-animatable="animatable">I worked with the Innovative Labs team on the project hireonai which creates a virtual environment for students to practice their interview skills.</p>
+									<p data-animatable="animatable">I worked with the Innovative Labs team on the
+										project hireonai which creates a virtual environment for students to practice
+										their interview skills.</p>
 								</div>
 							</div>
 							<div class="container left">
 								<div id="work-second" class="work-card">
 									<div data-animatable="animatable" class="work-profile">React.js Intern</div>
-									<div data-animatable="animatable" class="work-company">Radical Studios (Internship)</div>
+									<div data-animatable="animatable" class="work-company">Radical Studios (Internship)
+									</div>
 									<p data-animatable="animatable" class="work-period">June 2019 - June 2019</p>
-									<p data-animatable="animatable">I worked with the Radical Studio Team on developing projects with React.js and developing the Admin Console to help access data easily and at any time.I worked on two projects with them learning new cutting edge technologies and applying them.Got to learn a lot.</p>
+									<p data-animatable="animatable">I worked with the Radical Studio Team on developing
+										projects with React.js and developing the Admin Console to help access data
+										easily and at any time.I worked on two projects with them learning new cutting
+										edge technologies and applying them.Got to learn a lot.</p>
 								</div>
 							</div>
 							<div class="container right">
@@ -150,7 +181,11 @@
 									<div data-animatable="animatable" class="work-profile">Node.js Intern</div>
 									<div data-animatable="animatable" class="work-company">Moodcafe (Internship)</div>
 									<p data-animatable="animatable" class="work-period">Dec 2018 - Feb 2019</p>
-									<p data-animatable="animatable">I worked with the Moodcafe team to develop the APIs for the Free Mental Health Android application and I alone worked on developing the same application using the APIs on the website as a web app.I also carried out Load testing and Performance improvements of the API to serve users simulataneously with awesome content.</p>
+									<p data-animatable="animatable">I worked with the Moodcafe team to develop the APIs
+										for the Free Mental Health Android application and I alone worked on developing
+										the same application using the APIs on the website as a web app.I also carried
+										out Load testing and Performance improvements of the API to serve users
+										simulataneously with awesome content.</p>
 								</div>
 							</div>
 							<div class="container left">
@@ -158,7 +193,10 @@
 									<div data-animatable="animatable" class="work-profile">Web Developer Intern</div>
 									<div data-animatable="animatable" class="work-company">Moodcafe (Internship)</div>
 									<p data-animatable="animatable" class="work-period">Aug 2018 - Nov 2018</p>
-									<p data-animatable="animatable">I worked with the Moodcafe team on improving the backend and frontend of the application on mental health.I worked with Python and Javascript and making several pages with selfhelp, assesment tests and maintaining and improving the UI of the application.</p>
+									<p data-animatable="animatable">I worked with the Moodcafe team on improving the
+										backend and frontend of the application on mental health.I worked with Python
+										and Javascript and making several pages with selfhelp, assesment tests and
+										maintaining and improving the UI of the application.</p>
 								</div>
 							</div>
 						</div>
@@ -167,7 +205,10 @@
 					<div class="recommendations-container">
 						<div data-animatable="animatable" class="recommendation-card">
 							<div class="recommendation">
-									Illiyas worked with us for for three months to make a web app for our AI based tool. During his tenure, he worked with full determination and highly positive attitude. He makes the art of thinking creatively and building it so simple, that he becomes valuable asset for a company.
+								Illiyas worked with us for for three months to make a web app for our AI based tool.
+								During his tenure, he worked with full determination and highly positive attitude. He
+								makes the art of thinking creatively and building it so simple, that he becomes valuable
+								asset for a company.
 							</div>
 							<div class="recommender">
 								- Jasneet Singh Sawhney (Founder at Innovative Labs)
@@ -175,8 +216,11 @@
 						</div>
 						<div data-animatable="animatable" class="recommendation-card">
 							<div class="recommendation">
-								Iliyas has worked for Moodcafe as a software developer. He worked on both frontend and backend. One of the good thing about Iliyas was flexible to work on both ends as per our requirements.
-								<br><br>During the course of his internship, Iliyas proved himself to be a dependable employee and a hard worker with solid problem solving and technical skills.
+								Iliyas has worked for Moodcafe as a software developer. He worked on both frontend and
+								backend. One of the good thing about Iliyas was flexible to work on both ends as per our
+								requirements.
+								<br><br>During the course of his internship, Iliyas proved himself to be a dependable
+								employee and a hard worker with solid problem solving and technical skills.
 							</div>
 							<div class="recommender">
 								- Mikul Patel (Founder and CEO at Moodcafe)
@@ -184,7 +228,9 @@
 						</div>
 						<div data-animatable="animatable" class="recommendation-card">
 							<div class="recommendation">
-								It was pleasure working with Iliyas. He was able to understand exactly what we wanted in the solution. He is a quick learner and was able to set right expectations. Most importantly you can trust him with deadlines.
+								It was pleasure working with Iliyas. He was able to understand exactly what we wanted in
+								the solution. He is a quick learner and was able to set right expectations. Most
+								importantly you can trust him with deadlines.
 							</div>
 							<div class="recommender">
 								- Rahul Ratan Mirdha (Co-founder and CTO at Moodcafe)
@@ -199,7 +245,8 @@
 				<h2 class="topic-heading">Projects</h2>
 			</div>
 			<div class="project-selection">
-				<p data-animatable="animatable" onclick="selectCategory('all')" id="all" class="category-selected">ALL</p>
+				<p data-animatable="animatable" onclick="selectCategory('all')" id="all" class="category-selected">ALL
+				</p>
 				<p data-animatable="animatable" onclick="selectCategory('react')" id="react">React</p>
 				<p data-animatable="animatable" onclick="selectCategory('full stack')" id="full stack">Full Stack</p>
 				<p data-animatable="animatable" onclick="selectCategory('front end')" id="front end">Front End</p>
@@ -213,18 +260,29 @@
 			<div class="contact-grid">
 				<div class="contact-content">
 					<div class="centered">
-						<h1 data-animatable="animatable" class="contact-content__heading"><i class="fa fa-handshake-o"></i> Let's meet up <br> and collaborate!</h2>
-						<p data-animatable="animatable"><i class="fa fa-map-marker" aria-hidden="true"></i> Ahmedabad, Gujarat, India - 380007</p>
-						<p data-animatable="animatable"><i class="fa fa-envelope" aria-hidden="true"></i> iliyasattarwala007@gmail.com</p>
-						<p data-animatable="animatable"><i class="fa fa-phone" aria-hidden="true"></i> +91 9106948029</p>
-						<h4 data-animatable="animatable" class="connect-heading">Connect with me on</h4>
-						<p data-animatable="animatable" class="social-icons">
-							<a class="facebook-icon" target="_blank" href="https://www.facebook.com/iliyas.attarwala.7"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-							<a class="instagram-icon" target="_blank" href="https://www.instagram.com/i_m_a_007/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a class="github-icon" target="_blank" href="https://github.com/Innovator007"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-							<a class="linkedin-icon" target="_blank" href="https://www.linkedin.com/in/iliyas-attarwala/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-							<a href="https://twitter.com/IliyasAttar007" target="_blank" class="twitter-icon"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-						</p>
+						<h1 data-animatable="animatable" class="contact-content__heading"><i
+								class="fa fa-handshake-o"></i> Let's meet up <br> and collaborate!</h2>
+							<p data-animatable="animatable"><i class="fa fa-map-marker" aria-hidden="true"></i>
+								Ahmedabad, Gujarat, India - 380007</p>
+							<p data-animatable="animatable"><i class="fa fa-envelope" aria-hidden="true"></i>
+								iliyasattarwala007@gmail.com</p>
+							<p data-animatable="animatable"><i class="fa fa-phone" aria-hidden="true"></i> +91
+								9106948029</p>
+							<h4 data-animatable="animatable" class="connect-heading">Connect with me on</h4>
+							<p data-animatable="animatable" class="social-icons">
+								<a class="facebook-icon" target="_blank"
+									href="https://www.facebook.com/iliyas.attarwala.7"><i class="fa fa-facebook-square"
+										aria-hidden="true"></i></a>
+								<a class="instagram-icon" target="_blank" href="https://www.instagram.com/i_m_a_007/"><i
+										class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a class="github-icon" target="_blank" href="https://github.com/Innovator007"><i
+										class="fa fa-github-square" aria-hidden="true"></i></a>
+								<a class="linkedin-icon" target="_blank"
+									href="https://www.linkedin.com/in/iliyas-attarwala/"><i
+										class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+								<a href="https://twitter.com/IliyasAttar007" target="_blank" class="twitter-icon"><i
+										class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							</p>
 					</div>
 				</div>
 				<div class="contact-form-container">
@@ -237,17 +295,22 @@
 							<p>Error occured, please try again!</p>
 							<span class="close">&times;</span>
 						</div>
-						<input id="name" data-animatable="animatable" type="text" required name="name" placeholder="Your Name">
-						<input id="email" data-animatable="animatable" type="email" required name="email" placeholder="Your Email">
-						<input id="subject" data-animatable="animatable" type="text" name="subject" placeholder="Subject (Optional)">
-						<textarea required id="message" data-animatable="animatable" name="message" rows="4" placeholder="Anything to say...!"></textarea>
+						<input id="name" data-animatable="animatable" type="text" required name="name"
+							placeholder="Your Name">
+						<input id="email" data-animatable="animatable" type="email" required name="email"
+							placeholder="Your Email">
+						<input id="subject" data-animatable="animatable" type="text" name="subject"
+							placeholder="Subject (Optional)">
+						<textarea required id="message" data-animatable="animatable" name="message" rows="4"
+							placeholder="Anything to say...!"></textarea>
 						<button data-animatable="animatable" type="submit" class="contact-btn">Send</button>
 					</form>
 				</div>
 			</div>
 		</div>
 		<footer class="footer">
-			<h2 data-animatable="animatable" class="footer-heading">Made with <i class="fa fa-heart red-heart" aria-hidden="true"></i> by Iliyas Attarwala</h2>
+			<h2 data-animatable="animatable" class="footer-heading">Made with <i class="fa fa-heart red-heart"
+					aria-hidden="true"></i> by Iliyas Attarwala</h2>
 		</footer>
 
 	</div>
@@ -264,4 +327,5 @@
 	</div>
 	<script src="./assets/js/index.js"></script>
 </body>
+
 </html>
